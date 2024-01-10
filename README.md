@@ -1,4 +1,5 @@
 # Weather-API
+#Please open these folders through Visual Studio Code.
 
   - This app includes four pages (Home. Blog, FAQs, and About Us).
   - Using fetch API to get weather details of your location.
