@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLIMA</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/social-media.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="../assets/nasa_video.mp4" type="video/mp4" />
+      </video>
+      <header>
+        <nav>
+          <img src="../assets/logo.png" class="logo" />
+          <ul>
+            <li><a href="index.html" class="Hyperlink">Home</a></li>
+            <li><a href="blog.html" class="Hyperlink">Blog</a></li>
+            <li><a href="faq.html" class="Hyperlink">FAQs</a></li>
+            <li>
+              <a href="about-us.html" class="Hyperlink">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <h1 style="padding-bottom: 30px">CLIMA</h1>
+        <div class="container">
+          <div class="search">
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              placeholder="Enter a city"
+              id="city"
+            />
+            <button id="search">&#128269;</button>
+            <!--<button id="current">Use Current Location</button>-->
+          </div>
+        </div>
+        <img
+          id="weather-image"
+          src=""
+          alt="Weather Icon"
+          style="width: 100px; height: 100px; color: #fff"
+        />
+        <!--<div id="weather-image" class="weather-image"></div>-->
+        <h2 id="city-name">_______ ( ______ )</h2>
+        <h6 id="temp">
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </h6>
+        <h6 id="wind">
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </h6>
+        <h6 id="humidity">
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </h6>
+        <br />
+        <a
+          id="scrollToForecast"
+          style="padding: 5px 15px 5px 15px; font-size: 20px"
+          href="#bottom"
+          >5 Day Forecast</a
+        >
+      </div>
+    </div>
+    <p></p>
+    <h2
+      style="color: #e69700; background-color: black; font-size: 28px"
+      id="bottom"
+    >
+      &emsp;5 Day Forecast
+    </h2>
+    <div id="container">
+      <div class="box" id="day1">
+        <p>_______ ( ______ )</p>
+        <p>
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </p>
+        <p>
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </p>
+        <p>
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </p>
+      </div>
+      <div class="box" id="day2">
+        <p>_______ ( ______ )</p>
+        <p>
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </p>
+        <p>
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </p>
+        <p>
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </p>
+      </div>
+      <div class="box" id="day3">
+        <p>_______ ( ______ )</p>
+        <p>
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </p>
+        <p>
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </p>
+        <p>
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </p>
+      </div>
+      <div class="box" id="day4">
+        <p>_______ ( ______ )</p>
+        <p>
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </p>
+        <p>
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </p>
+        <p>
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </p>
+      </div>
+      <div class="box" id="day5">
+        <p>_______ ( ______ )</p>
+        <p>
+          <img
+            src="../assets/thermometer.png"
+            alt="temp"
+            width="25px"
+            height="15px"
+          />Temperature: __°C
+        </p>
+        <p>
+          <img
+            src="../assets/wind.png"
+            alt="wind"
+            width="15px"
+            height="15px"
+          />&nbsp;Wind: __ m/s
+        </p>
+        <p>
+          <img
+            src="../assets/humidity.png"
+            alt="humidity"
+            width="15px"
+            height="15px"
+          />&nbsp;Humidity: __%
+        </p>
+      </div>
+    </div>
+    <div class="allbody">
+      <ul class="allul">
+        <li class="item">
+          <a
+            href="https://www.instagram.com/yaswanthgudivada6303/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram icon"></i>
+          </a>
+        </li>
+        <li class="item">
+          <a
+            href="https://www.linkedin.com/in/yaswanth-gudivada-415a5324a/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin icon"></i>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="fa-brands fa-youtube icon"></i>
+          </a>
+        </li>
+        <li class="item">
+          <a href="https://twitter.com/6303_Yaswanth" target="_blank">
+            <i class="fa-brands fa-x-twitter icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      style="
+        color: lightgray;
+        background-color: black;
+        text-align: center;
+        padding-bottom: 1%;
+      "
+    >
+      &copy;2023 CLIMA All rights reserved
+    </div>
+    <script type="module" src="../js/script.js"></script>
+  </body>
+</html>

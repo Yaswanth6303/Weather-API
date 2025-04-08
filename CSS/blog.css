@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: linear-gradient(180deg, #000000, #00003e);
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+nav {
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  margin: 0 10px;
+}
+nav a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #e69f00;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+nav a:hover::before {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.accordian {
+  max-width: 100%;
+}
+.accordian .contents {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordian .contents .label {
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.accordian .contents .label:hover {
+  color: #e69700;
+}
+.accordian .contents .label::before {
+  content: "+";
+  position: relative;
+  top: 50%;
+  right: 20px;
+  font-size: 24px;
+}
+.accordian .contents .content {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: 2s;
+  color: white;
+  overflow-y: hidden;
+}
+.accordian .contents.active .label::before {
+  content: "-";
+}
+.accordian .contents.active .content {
+  max-height: 2000px;
+}
+.accordian .contents.active .label {
+  color: #e69700;
+}
+
+span[data-descr] {
+  position: relative;
+  text-decoration: none;
+  color: purple;
+  cursor: help;
+}
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+  content: attr(data-descr);
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  top: 24px;
+  min-width: 200px;
+  background-color: white;
+  border: 2px #e69700 solid;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.3;
+  z-index: 1;
+}
+
+img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.hover_text span.hover_card {
+  display: none;
+}
+
+.hover_text:hover span.hover_card {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 2px solid #e69f00;
+  padding: 8px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: #e69f00;
+  z-index: 1;
+}
+.hover_text {
+  position: relative;
+  color: #e69f00;
+  text-decoration: none;
+  cursor: help;
+}
+
+#thermometer {
+  display: block;
+  margin-left: 47%;
+  margin-right: 50%;
+  width: 10%;
+}
+
+#baro {
+  display: block;
+  margin-left: 42%;
+  margin-right: 50%;
+  width: 10%;
+}
+
+#rain {
+  display: block;
+  margin-left: 42%;
+  margin-right: 50%;
+  width: 10%;
+}
+
+#anemo {
+  display: block;
+  margin-left: 42%;
+  margin-right: 50%;
+  width: 10%;
+}
+
+#balloon {
+  display: block;
+  margin-left: 38%;
+  margin-right: 50%;
+  width: 10%;
+}
+#sat {
+  display: block;
+  margin-left: 38%;
+  margin-right: 50%;
+  width: 10%;
+}
+
+.button {
+  background-color: #00003e;
+  border-color: white;
+  border-radius: 30px;
+  color: #e69700;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(230, 151, 0, 1);
+}
+
+.back {
+  background: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #e69700;
+  transition: 0.4s ease;
+}
+
+.back:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(230, 151, 0, 1);
+}
+
+.back div {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 7px;
+}
+
+.arrow {
+  transform: rotate(-90deg);
+}
+html::-webkit-scrollbar {
+  width: 16px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
