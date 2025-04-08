@@ -51,11 +51,11 @@ nav a:hover::before {
 
 .c_video {
   position: relative;
-  align-items: center;
+  display: block;
   width: 60%;
-  height: 50%;
-  right: 300;
-  left: 320;
+  height: auto;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 a {
