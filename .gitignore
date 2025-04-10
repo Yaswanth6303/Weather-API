@@ -1,5 +1,6 @@
 # Ignore configuration files with sensitive data
 js/config.js
+assets/interview_with_Prof.Kumaraswamy.mp4
 
 # OS generated files
 .DS_Store
